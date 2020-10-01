@@ -11,13 +11,13 @@ driver.get("chrome://dino")
 driver.maximize_window()
 
 def restart():
-    pyautogui.click(x=678, y=376)
+    pyautogui.click(x=675, y=375)
 
 def play():
     sleep(1)
     pyautogui.press('up')                                                
     sleep(3)
-    im1 = PIL.ImageGrab.grab(bbox = (210, 405, 320, 460))
+    im1 = PIL.ImageGrab.grab(bbox = (210, 400, 325, 460))
     im1.save("im1.jpg")                                         
     grayim1 = PIL.ImageOps.grayscale(im1)
     pixelim1 = numpy.array(grayim1.getcolors())
